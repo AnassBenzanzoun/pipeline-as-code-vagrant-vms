@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('Fetch code') {
           steps{
-              git branch: 'vp-rem', url:'https://github.com/devopshydclub/vprofile-repo.git'
+              git branch: 'main', url:'https://github.com/AnassBenzanzoun/pipeline-as-code-vagrant-vms.git'
           }  
         }
 
