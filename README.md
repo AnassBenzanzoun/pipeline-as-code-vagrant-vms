@@ -63,17 +63,14 @@ Follow these steps to get the pipeline environment running:
 
 ## Usage
 
-    you can either trigger the pipeline by running it manually or by adding webhooks to your project
-    to configure Webhooks in GitHub:
-
-    In your GitHub repository, go to Settings > Webhooks > Add webhook.
-    Set the Payload URL to http://your-jenkins-server/github-webhook/.
-    Set the Content type to application/json.
-    Select individual events or choose to send everything.
-    Configure Jenkins Job:
-
-    In your Jenkins job configuration, go to the "Build Triggers" section.
-    Check the option "GitHub hook trigger for GITScm polling."
-
-    you must also use webhooks in sonar qube if your code quality gates are different from the
-    default
+you can either trigger the pipeline by running it manually or by adding webhooks to your project
+to configure Webhooks in GitHub:
+In your GitHub repository, go to Settings > Webhooks > Add webhook.
+Set the Payload URL to http://your-jenkins-server/github-webhook/.
+Set the Content type to application/json.
+Select individual events or choose to send everything.
+Configure Jenkins Job:
+In your Jenkins job configuration, go to the "Build Triggers" section.
+Check the option "GitHub hook trigger for GITScm polling."
+you must also use webhooks in sonar qube if your code quality gates are different from the
+default
